@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
         if (err) {
             console.log('Error reading file', err);
             res.statusCode = 500; // Internal Server Error if there's an issue reading the file
-            res.end('<h1>500: Internal Server Error</h1>');
+            res.end('<h1>500: Internal Server Error</h1');
         } else {
             res.statusCode = statusCode; // Use the status code determined by the URL
             res.end(data); // Send the file content as the response
