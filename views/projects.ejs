@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
+<%- include('./common/header.ejs')%>
 <body>
-    <header classname =" projects content">
-        <nav>
-            <ul class="navbar">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('./common/navbar.ejs')%>
     <h1>
         Projects || Listed
     </h1>
@@ -28,5 +12,6 @@
             <a href="#">Read More</a>
         </div>
     </div>
+    <%- include('./common/footer.ejs') %>
 </body>
 </html>

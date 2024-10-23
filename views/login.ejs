@@ -1,0 +1,23 @@
+<%- include('./common/header.ejs') %>
+<body>
+    <%- include('./common/navbar.ejs')%>
+    <section>
+        <h2>Login</h2>
+        <form action="/" method="POST">
+            <ul class="login_form">
+                <li>
+                    <label for="userName">User Name</label>
+                    <input type="text" placeholder="User name ..." name="userName" id="userName" required />
+                </li>
+                <li>
+                    <label for="userPass">User Password</label>
+                    <input type="password" placeholder="User Password ..." name="userPass" id="userPass" required />
+                </li>
+                <li>
+                    <button type="submit">Login</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>
